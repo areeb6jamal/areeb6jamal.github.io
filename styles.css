@@ -34,6 +34,16 @@
     "contact contact contact contact contact contact"
     "footer footer footer footer footer footer";
 }
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: larger;
+    display: block;
+    margin: 0px;
+    text-decoration: none;
+    color: rgb(15, 66, 75);
+    text-align: center;
+}
 /*header and nav setup*/
 header{
     grid-area: header;
@@ -144,7 +154,12 @@ main img{
     box-sizing:border-box;
 }
 main p{
-    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: larger;
+    display: block;
+    margin: 0px;
+    color: rgb(15, 66, 75);
 }
 #suit{
     text-align: center;
@@ -157,7 +172,6 @@ main p{
         flex: 1 1 0;
     }
     main p{
-        line-height: 30px;
         flex: 1 1 0;
     }
 }
@@ -173,6 +187,7 @@ main p{
 footer{
     grid-area: footer;
 }
+
 /*
 body {
     display:grid;
