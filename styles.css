@@ -46,7 +46,8 @@ body{
 /*header and nav setup*/
 header{
     grid-area: header;
-    max-width: 1920px;
+    min-height: 5vh;
+    max-width: 100vw;
     margin: 0;
     /*background-color:  rgba(24, 22, 22, 0.8);*/
 }
@@ -62,6 +63,7 @@ header h1{
 }
 nav{
     grid-area: nav;
+    min-height: 5vh;
     /*(background-color:  rgba(24, 22, 22, 0.8);*/
     margin: 0px 0px 40px 0px;
 }
@@ -135,6 +137,7 @@ nav a {
 /*Main intro setup*/
 main{
     grid-area: main;
+    min-height: 80vh;
     justify-self: center;
 }
 main img{
@@ -150,10 +153,7 @@ main p{
     font-size: 40px;
     display: block;
     color: rgb(15, 66, 75);
-    margin: 0;
-}
-main div{
-    height: 900px;
+    margin: 0px;
 }
 main span{
   align-self: center;
@@ -172,6 +172,7 @@ span {
   left: 50%;
   top: 700px;
   transform: translate(-50%, -50%);
+  margin: 15px 0px 15px 0px;
 }
 span::before {
   content: "AREEB JAMAL";
@@ -302,9 +303,6 @@ span:hover:after {
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
-    main{
-      height: 774px;
-    }
     main div{
       height: auto;
       display: flex;
