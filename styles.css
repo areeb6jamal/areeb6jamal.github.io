@@ -137,20 +137,13 @@ nav a {
 /*Main intro setup*/
 main{
     grid-area: main;
-    min-height: 80vh;
+    min-height: 90vh;
     justify-self: center;
-}
-main img{
-    align-self: center;
-    border: 3px rgb(15, 66, 75) solid;
-    border-radius: 500px;
-    box-sizing:border-box;
-    margin: 10px;
 }
 main p{
     align-self: center;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 35px;
     display: block;
     color: rgb(15, 66, 75);
     margin: 0px;
@@ -162,17 +155,20 @@ main span{
   display: block;
   color:  white
 }
+/*Name effects desktop*/
 @media screen and (min-width:768px) {
-main span{
-  color: rgb(15, 66, 75);
-}
-span {
-  width: 700px;
+main span {
+  color: rgb(15, 66, 75);;
+  width: 900px;
   position: absolute;
   left: 50%;
-  top: 700px;
+  top: 570px;
   transform: translate(-50%, -50%);
   margin: 15px 0px 15px 0px;
+  font-size: 120px;
+}
+.hey{
+  font-size: 50px;
 }
 span::before {
   content: "AREEB JAMAL";
@@ -187,7 +183,7 @@ span::before {
   );
   -webkit-background-clip: text;
   top: 0px;
-  left: 5px;
+  left: 37px;
   z-index: -1;
   transition: 0.75s;
 }
@@ -205,12 +201,12 @@ span::after {
   );
   -webkit-background-clip: text;
   top: 0px;
-  left: 5px;
+  left: 36px;
   transition: 0.75s;
 }
 span:hover:before {
   top: 5px;
-  left: 10px;
+  left: 47px;
   background-image: repeating-linear-gradient(
     45deg,
     transparent 0,
@@ -221,7 +217,7 @@ span:hover:before {
 }
 span:hover:after {
   top: -5px;
-  left: -5px;
+  left: 25px;
   background-image: repeating-linear-gradient(
     45deg,
     transparent 0,
@@ -231,9 +227,18 @@ span:hover:after {
   );
 } 
 }
+/*Images effects mobile*/
+main img{
+  align-self: center;
+  border: 3px rgb(15, 66, 75) solid;
+  border-radius: 500px;
+  box-sizing:border-box;
+}
+main div{
+  height: 875px;
+}
 .image {
   position: relative;
-  margin: 20px;
   min-width: 200px;
   min-height: 290px;
   width: 100%;
@@ -250,7 +255,7 @@ span:hover:after {
 }
 .image img {
   position: absolute;
-  right: 6px;
+  right: 38px;
   top: 30%;
   opacity: 1;
   width: 100%;
@@ -261,7 +266,7 @@ span:hover:after {
   position: absolute;
   width: 50%;
   top: 33%;
-  left: -35px;
+  left: -60px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 20px 0 20px 20px;
@@ -292,7 +297,7 @@ span:hover:after {
 .image:hover img,
 .image.hover img {
   width: 55%;
-  right: 0%;
+  right: 12%;
 }
 .image:hover figcaption h2,
 .image.hover figcaption h2,
@@ -302,9 +307,10 @@ span:hover:after {
   transform: translateX(0px);
   opacity: 1;
 }
+/*Image effects desktop*/
 @media screen and (min-width: 768px) {
     main div{
-      height: auto;
+      height: 300px;
       display: flex;
     }
     .image{
@@ -312,35 +318,53 @@ span:hover:after {
       flex: 1 1 0;
     }
     .image img {
-      top: 50%;
-      right: -9px;
+      right: 0px;
+      top: 100px;
       flex: 1 1 0;
     }
-    .image figcaption {
-      top: 55%;
-    }
-    main p{
-      margin: 100px;
-      font-size: 50px;
-    }
-    main span{
-      font-size: 100px;
-    }
 }
+/*About Me page*/
 #About{
-    grid-area: about;
-    margin: 30px;
+  grid-area: about;
+  color: rgb(15, 66, 75);
+  background-color: rgba(255, 255, 255, 0.6);
+  justify-self: center;
+}
+#About a{
+  font-size: 50px;
+}
+#About p{
+  text-transform: none;
+  flex-basis: 100%;
+  margin: 30px;
+  text-align: center;
+  justify-self: center;
 }
 #Projects{
-    grid-area: projects;
-    margin: 30px;
+  width: 100%;
+  grid-area: projects;
+  margin: 30px;
+  justify-self: center;
+}
+#Projects a{
+  font-size: 50px;
+  
 }
 #Contact{
-    grid-area: contact;
-    margin: 30px;
+  width: 100%;
+  grid-area: contact;
+  margin: 30px;
+  justify-self: center;
+}
+#Contact a{
+  font-size: 50px;
 }
 footer{
-    grid-area: footer;
-    margin: 30px;
+  width: 100%;
+  grid-area: footer;
+}
+footer p{
+  text-transform: none;
+  text-align: center;
 }
 
